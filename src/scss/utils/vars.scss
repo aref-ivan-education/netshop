@@ -1,0 +1,55 @@
+// Font
+$mainFont                : 'Roboto-Regular', Helvetica, Arial, sans-serif;
+$logoFont                : 'Pacifico-Regular', Helvetica, Arial, sans-serif;
+$headersFont             : 'FuturaDemiC', Helvetica, Arial, sans-serif;
+
+// Size
+$mainFontColor           : #101010;
+$mainFontSize            : 14px;
+$mainFontWeight          : 400;
+$mainLineHeight          : 171%;
+
+$maxWidth                : 1440px;
+
+$desktopWidth            : 1280px;
+$smDesktopWidth          : 980px;
+$tableWidth              : 768px;
+$phoneWidth              : 480px;
+$smPhoneWidth            : 320px;
+
+// Main color
+$default-color           : #ffffff;
+$primary-color           : #dcdcdc;
+$primary-color--75       : #dcdcdcbf;
+$primary-color--50       : #dcdcdc80;
+$primary-color--25       : #dcdcdc40;
+$primary-color--10       : #dcdcdc1a;
+$primary-color--5        : #dcdcdc0d;
+$list-color              :#708090;
+$success-color           : #26de81;
+$danger-color            : #fc5c65;
+$warning-color           : #fed330;
+$light-color             : #999999;
+$green-color             : #6fcf97;
+$blue-color              : #66D2EA;
+$purple-color            : #bc9eff;
+$purple-color--50        : #bc9eff80;
+$purple2-color           : #8ba3f9;
+$backgroundColor         : #fffafa;
+$backgroundColor--50     : #ffffff80;
+
+// Neutral Color
+$neutral-primary         : #303133;
+$neutral-regular         : #606266;
+$neutral-secondary       : #909399;
+$neutral-placeholder     : #C0C4CC;
+
+// Border Color
+$border-base             : #DCDFE6;
+$border-light            : #E4E7ED;
+$border-lighter          : #EBEEF5;
+$border-lightex          : #F2F6FC;
+
+//Gradiens
+$primary-gradient        :linear-gradient(to bottom,$purple-color,$purple2-color);
+$second-gradient         :linear-gradient(to bottom,$green-color,$blue-color);

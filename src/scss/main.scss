@@ -1,0 +1,35 @@
+
+@import "utils/vars.scss";
+@import "utils/mixins.scss";
+@import "utils/fonts.scss";
+@import "utils/libs.scss";
+@import "utils/reset.scss";
+
+
+
+// @import "../blocks/form-review/form-review.scss/";
+
+html{
+    font-size: $mainFontSize;
+    font-family: $mainFont;
+}
+.wrapper{
+    max-width:1200px;
+    margin: 0 auto;
+    &--main{
+        & .header__nav__items--page{
+            display: flex;
+        }
+    }
+}
+.h2{
+    font-family: $headersFont;
+    text-align: center;
+    font-size:rem(20);
+    text-transform: uppercase;
+}
+.h3{
+    font-family: $headersFont;
+    text-align: center;
+    font-size: rem(20);
+}

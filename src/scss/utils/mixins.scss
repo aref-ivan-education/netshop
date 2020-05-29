@@ -1,0 +1,40 @@
+@function rem($pixels, $context: $mainFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1rem;
+}
+
+@mixin size($width,$height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content};
+  &:-moz-placeholder           {@content};
+  &::-moz-placeholder          {@content};
+  &:-ms-input-placeholder      {@content};
+}
+@mixin sliderThumb {
+  &::-webkit-slider-thumb {@content};
+  &::-moz-range-thumb     {@content};
+  &::-ms-thumb            {@content};
+}
+@mixin fontFace($name,$path,$weight:"normal",$style:"normal"){
+  @font-face {
+    font-family: $name;
+    src: url($path+$name+"/"+$name+'.eot');
+      src: local(''),
+           url($path+$name+"/"+$name+'.woff') format('woff'), 
+           url($path+$name+"/"+$name+'.ttf') format('truetype'),
+           url($path+$name+"/"+$name+'.svg') format('svg');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
